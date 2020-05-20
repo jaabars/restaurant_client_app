@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.megacom.restaurantclientapp.controllers.customerControllers.CustomerSignUpCtrl">
+   <children>
+      <GridPane layoutX="168.0" layoutY="28.0" prefHeight="220.0" prefWidth="313.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtName" promptText="Введите ФИО">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAddress" promptText="Введите адресс" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtHouseNum" promptText="Введите номер дома" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFlatNum" promptText="Введите номер квартиры" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPhone" promptText="Введите номер телефона 0550 550 550" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passField" promptText="Введите пароль не менее 6 символов " GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="163.0" layoutY="282.0" prefHeight="40.0" prefWidth="237.0">
+        <buttons>
+          <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onButtonClicked" text="Сохранить">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#onButtonClicked" text="Отмена">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
